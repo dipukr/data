@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consumer</title>
+	<style type="text/css">
+		table tr td {
+			padding: 5px 10px;
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		function consumer() {
+			var request = new XMLHttpRequest();
+			request.open("GET", "http://localhost:8080/users", true);
+			request.onreadystatechange = function() {
+				if (request.readyState === 4 && request.status === 200) {
+					var users = JSON.parse(request.responseText);
+					var data = "<table border='1'>";
+					data += "<tr>";
+					data += "<th>Id</th>";
+					data += "<th>Name</th>";
+					data += "<th>Email</th>";
+					data += "<th>Password</th>";
+					data += "</tr>";
+					for (i = 0; i < users.length; i++) {
+						var user = users[i];
+						data += "<tr>";
+						data += "<td>"+user.id+"</td>";
+						data += "<td>"+user.name+"</td>";
+						data += "<td>"+user.email+"</td>";
+						data += "<td>"+user.password+"</td>";
+						data += "</tr>";
+					}
+					data += "</table>";
+					document.getElementById("content").innerHTML = data;
+				}
+			};
+			request.send();
+		}
+	</script>
+</head>
+<body>
+	<button onclick="consumer()">GO</button> <br> <br>
+	<div id="content"></div>
+</body>
+</html>
