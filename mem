@@ -2,3 +2,4 @@ AL6075@csvtu.ac.in: gmail
 IRCTC: d2epukr.IamD2epu
 PAF.UAN: 101934237545
 ATBBrJ4p9XaAgVxjJGcP24qGz4Ln47F30338
+sudo yum -y install epel-release
