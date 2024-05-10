@@ -4,3 +4,4 @@ PAF.UAN: 101934237545
 ATBBrJ4p9XaAgVxjJGcP24qGz4Ln47F30338
 sudo yum -y install epel-release
 CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
+Intel-i5-10600K
