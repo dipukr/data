@@ -5,3 +5,4 @@ ATBBrJ4p9XaAgVxjJGcP24qGz4Ln47F30338
 sudo yum -y install epel-release
 CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
 Intel-i5-10600K
+git -c credential.helper='!f() { echo "username=myusername"; echo "password=mysecretpassword"; }; f' pull
