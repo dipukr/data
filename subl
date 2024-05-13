@@ -1,0 +1,58 @@
+{
+	"font_face": "Inconsolata",
+	"font_size": 16,
+	"font_options": ["no_italic"],
+	"draw_indent_guides": false,
+	"file_tab_style": "angled",
+	"open_files_in_new_window": "never",
+	"word_wrap": true,
+	"hot_exit": false,
+	"line_numbers": false,
+	"caret_style": "smooth",
+	"close_windows_when_empty": true,
+	"enable_tab_scrolling": false,
+	"hide_new_tab_button": true,
+	"highlight_gutter": false,
+	"match_brackets": false,
+	"fold_buttons": false,
+	"color_scheme": "Sixteen.sublime-color-scheme",
+	"theme": "Default.sublime-theme",
+	"caret_extra_top": 0,
+	"caret_extra_bottom": 0
+}
+{
+	"shell_cmd": "gcc \"${file}\" -o \"${file_path}/${file_base_name}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c",
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"shell_cmd": "gcc \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\""
+		}
+	]
+}
+{
+	"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c++",
+	"quiet": true,
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+			"quiet": true,
+		}
+	]
+}
+{
+	"shell_cmd": "/opt/graalvm/bin/javac $file && /opt/graalvm/bin/java $file_base_name",
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.java",
+	"quiet": true
+}

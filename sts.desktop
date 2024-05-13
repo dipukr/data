@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Spring Tool Suite
+Icon=/opt/sts-4.7.0.RELEASE/icon.xpm
+Exec="/opt/sts-4.7.0.RELEASE/SpringToolSuite4" %f
+Comment=Capable and Ergonomic IDE for JVM
+Categories=Development;IDE;
+Terminal=false
+StartupNotify=true
