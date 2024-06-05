@@ -7,6 +7,3 @@ CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
 Intel-i5-10600K
 git -c credential.helper='!f() { echo "username=myusername"; echo "password=mysecretpassword"; }; f' pull
 
-https://www.youtube.com/shorts/B9JtLpz1t9s
-https://www.youtube.com/watch?v=Xz8ao70k5yA
-https://www.youtube.com/shorts/OzGXu7Il7Ms
