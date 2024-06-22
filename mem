@@ -1,9 +1,5 @@
-AL6075@csvtu.ac.in: gmail
-IRCTC: d2epukr.IamD2epu
-PAF.UAN: 101934237545
-ATBBrJ4p9XaAgVxjJGcP24qGz4Ln47F30338
-sudo yum -y install epel-release
-CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
-Intel-i5-10600K
-git -c credential.helper='!f() { echo "username=myusername"; echo "password=mysecretpassword"; }; f' pull
-
+AL6075@csvtu.ac.in:P2
+IRCTC:d2epukr.IamD2epu
+PF:101934237545:P1_108
+SB:koomardipu:P1:P1_108
+BB:ATBBrJ4p9XaAgVxjJGcP24qGz4Ln47F30338
