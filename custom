@@ -17,3 +17,7 @@
 [g++ -c add.cpp:ar crf ..\lib\libadd.a add.o:g++ -o main main.cpp -L. -ladd]
 [g++ -c -O3 -std=c++11 -I"../include"]
 [jar cfe Main.jar Main *.class]
+[cd /etc/yum.repos.d/]
+[sudo sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*]
+[sudo sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*]
+[sudo yum update -y]
