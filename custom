@@ -10,7 +10,7 @@
 [mvn archetype:generate -DgroupId=? -DartifactId=? -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false]
 [wget https://brave-browser-rpm-release.s3.brave.com/x86_64/brave-browser-1.43.88-1.x86_64.rpm]
 [sudo dnf install gnome-tweaks liberation-fonts mesa-vulkan-drivers]
-[git config --global credential.helper "/bin/bash /home/rootshell/.config/user/.git-credentials"]
+[git config --global credential.helper "/bin/bash /home/rootshell/.config/.git-credentials"]
 [git -c credential.helper='!f() { echo "username=myusername"; echo "password=mysecretpassword"; }; f' pull]
 [sudo yum -y install epel-release]
 [CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';]
