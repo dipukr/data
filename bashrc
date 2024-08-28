@@ -20,6 +20,8 @@ alias freq='cat /sys/devices/system/cpu/cpu*/cpufreq/scaling_cur_freq'
 alias boost='echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor'
 alias tooladd='append /home/rootshell/Notes/utils'
 alias gets='echo ATBBrJ4p9XaAgVxjJGcP24qGz4Ln47F30338'
+alias open=xdg-open
+alias ls='ls --color -h --group-directories-first'
 
 #PS1='[\u@localhost.localdomain]$ '
 #PS1='\[\e]0;\w\a\][\u@localhost.localdomain]$ '
